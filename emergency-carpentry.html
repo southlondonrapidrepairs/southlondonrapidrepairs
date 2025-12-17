@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How It Works | South London Rapid Repairs</title>
-  <meta name="description" content="3-step process: contact us, get matched with a vetted tradesperson, problem solved. Transparent, fast, South-London-wide." />
+  <title>Emergency Carpentry South London | 24/7 Carpenter | Door & Window Repairs</title>
+  <meta name="description" content="Emergency carpentry in South London. Broken doors, window boarding, structural timber. Vetted carpenters 24/7." />
 
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="components.css" />
@@ -15,7 +15,7 @@
     body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--navy); }
     .emergency-bar{ position:fixed; top:0; left:0; right:0; background:#e53e3e; color:#fff; padding:10px; z-index:1000; text-align:center; font-weight:600; }
     .emergency-bar a{ color:#fff; margin:0 10px; text-decoration:none; }
-    .container{ max-width:1100px; margin:0 auto; padding:0 20px; }
+    .container{ max-width:1200px; margin:0 auto; padding:0 20px; }
     .site-header{ background:#fff; padding:14px 0; margin-top:44px; border-bottom:1px solid rgba(26,35,50,.08); }
     .header-inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
     .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--navy); }
@@ -23,7 +23,22 @@
     .nav{ display:flex; gap:14px; flex-wrap:wrap; }
     .nav a{ text-decoration:none; opacity:.9; }
     .nav a:hover{ opacity:1; text-decoration:underline; }
-    .hero{ background:#2c5282; color:#fff; padding:44px 0; text-align:center; }
+    .hero{
+      background:linear-gradient(135deg, #1a2332 0%, #2c5282 100%);
+      color:#fff; padding:54px 0 54px;
+    }
+    .hero-grid{ display:grid; gap:28px; }
+    @media(min-width:900px){ .hero-grid{ grid-template-columns: 1.1fr .9fr; } }
+    .lead-form{
+      background:#fff; color:var(--navy);
+      padding:24px; border-radius:12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+    .lead-form input,.lead-form select,.lead-form textarea{
+      width:100%; padding:12px; margin:8px 0;
+      border:2px solid #cbd5e0; border-radius:8px; font-size:16px; box-sizing:border-box;
+    }
+    .submit-button{ background:var(--orange); color:#fff; border:none; padding:14px 16px; width:100%; border-radius:10px; font-size:16px; font-weight:800; cursor:pointer; }
     footer{ background:var(--navy); color:#fff; padding:26px 0; text-align:center; font-size:14px; margin-top:30px; }
   </style>
 </head>
@@ -32,7 +47,7 @@
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442079460958">020 7946 0958</a>
-    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">WhatsApp</a>
+    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20carpentry%20help%20in%20South%20London" rel="noopener">WhatsApp</a>
   </div>
 
   <header class="site-header">
@@ -51,46 +66,47 @@
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1 style="margin:0 0 10px;">How South London Rapid Repairs Works</h1>
-      <p style="margin:0;opacity:.95;">Three simple steps to get your emergency fixed fast.</p>
-    </div>
-  </section>
+    <div class="container hero-grid">
+      <div>
+        <h1 style="margin:0 0 10px;font-size:42px;line-height:1.1;">Emergency Carpentry South London</h1>
+        <p style="margin:0;max-width:65ch;opacity:.95;font-size:18px;line-height:1.5;">
+          Broken door? Window boarding? Frame damage? We connect you with vetted emergency carpenters — often within 60 minutes, 24/7.
+        </p>
+      </div>
 
-  <section style="background:#f8f9fa;padding:60px 0;">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;text-align:center;">
-        <div style="background:#fff;border:1px solid rgba(26,35,50,.08);border-radius:12px;padding:22px;">
-          <div style="width:74px;height:74px;background:#ff6b35;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;margin:0 auto 16px;">1</div>
-          <h3>Contact Us</h3>
-          <p>Call, WhatsApp or fill in the form 24/7. Tell us the problem and your postcode.</p>
-        </div>
-
-        <div style="background:#fff;border:1px solid rgba(26,35,50,.08);border-radius:12px;padding:22px;">
-          <div style="width:74px;height:74px;background:#ff6b35;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;margin:0 auto 16px;">2</div>
-          <h3>Get Matched</h3>
-          <p>We alert the nearest available, vetted tradesperson in our network.</p>
-        </div>
-
-        <div style="background:#fff;border:1px solid rgba(26,35,50,.08);border-radius:12px;padding:22px;">
-          <div style="width:74px;height:74px;background:#ff6b35;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;margin:0 auto 16px;">3</div>
-          <h3>Problem Solved</h3>
-          <p>They arrive, quote and fix the issue. You pay them directly — no hidden fees.</p>
-        </div>
+      <div>
+        <form class="lead-form" id="carpentry-form">
+          <h3>Get Emergency Carpenter</h3>
+          <input name="name" placeholder="Your Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input name="postcode" placeholder="Postcode" required />
+          <select name="emergency_type" required>
+            <option value="">Type of Emergency</option>
+            <option>Broken Door</option>
+            <option>Window Boarding</option>
+            <option>Structural Timber</option>
+            <option>Lock/Frame Damage</option>
+          </select>
+          <textarea name="description" placeholder="Describe the carpentry emergency" rows="3" required></textarea>
+          <label style="display:flex;gap:10px;align-items:flex-start;margin:10px 0 12px;font-size:14px;">
+            <input type="checkbox" required style="margin-top:3px;" />
+            <span>I agree to be contacted about this enquiry.</span>
+          </label>
+          <button type="submit" class="submit-button">Get Emergency Carpenter</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <section style="padding:60px 0;">
-    <div class="container" style="max-width:820px;">
-      <h2 style="text-align:center;margin:0 0 18px;">Vetting Process</h2>
-      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px;">
-        <li>✅ Photo ID verified</li>
-        <li>✅ Public liability insurance checked (min £2M)</li>
-        <li>✅ References from recent customers</li>
-        <li>✅ DBS criminal-record check</li>
-        <li>✅ Trade-specific qualifications reviewed</li>
-      </ul>
+  <section style="background:#f8f9fa;padding:40px 0;">
+    <div class="container">
+      <h2 style="text-align:center;margin:0 0 20px;">Common Carpentry Emergencies</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;">
+        <div style="background:#fff;padding:18px;border-radius:10px;border:1px solid rgba(26,35,50,.08);"><h3>🚪 Broken Doors</h3><p>Doors hanging off, locks broken, frames damaged after break-in.</p></div>
+        <div style="background:#fff;padding:18px;border-radius:10px;border:1px solid rgba(26,35,50,.08);"><h3>🪟 Window Boarding</h3><p>Smashed windows needing urgent boarding for security.</p></div>
+        <div style="background:#fff;padding:18px;border-radius:10px;border:1px solid rgba(26,35,50,.08);"><h3>🪵 Structural Timber</h3><p>Rotten or damaged beams needing urgent attention.</p></div>
+        <div style="background:#fff;padding:18px;border-radius:10px;border:1px solid rgba(26,35,50,.08);"><h3>🔐 Lock / Frame Damage</h3><p>Forced entry damage, alignment issues, emergency securing.</p></div>
+      </div>
     </div>
   </section>
 
@@ -99,5 +115,9 @@
       <p>© 2024 South London Rapid Repairs</p>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
+  <script src="lead-capture.js"></script>
 </body>
 </html>
