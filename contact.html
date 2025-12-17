@@ -27,4 +27,98 @@
     .card-grid{ display:grid; gap:24px; }
     @media(min-width:900px){ .card-grid{ grid-template-columns: 1fr 1fr; } }
     .card{ background:#fff; border:1px solid rgba(26,35,50,.08); border-radius:12px; padding:22px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
-    .lead-form input,.lead-form select{ width:100%; padding:12px; margin:8px 0; border:2px solid #cbd5e0; bor
+    .lead-form input,.lead-form select{ width:100%; padding:12px; margin:8px 0; border:2px solid #cbd5e0; border-radius:8px; font-size:16px; box-sizing:border-box; }
+    .submit-button{ background:var(--orange); color:#fff; border:none; padding:14px 16px; width:100%; border-radius:10px; font-size:16px; font-weight:800; cursor:pointer; }
+    footer{ background:var(--navy); color:#fff; padding:26px 0; text-align:center; font-size:14px; margin-top:30px; }
+  </style>
+</head>
+<body>
+  <div class="emergency-bar">
+    <span>🚨 24/7 Emergency Response</span>
+    <a href="tel:+442079460958">020 7946 0958</a>
+    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">WhatsApp</a>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="Logo.png" alt="South London Rapid Repairs" />
+        <strong>South London Rapid Repairs</strong>
+      </a>
+      <nav class="nav">
+        <a href="emergency-roofing.html">Emergency Roofing</a>
+        <a href="emergency-carpentry.html">Emergency Carpentry</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container" style="text-align:center;">
+      <h1 style="margin:0 0 10px;">Contact South London Rapid Repairs</h1>
+      <p style="margin:0;opacity:.95;">Call, WhatsApp, or request a callback.</p>
+    </div>
+  </section>
+
+  <section style="padding:44px 0;background:#f8f9fa;">
+    <div class="container card-grid">
+      <div class="card">
+        <h2 style="margin-top:0;">24/7 Emergency</h2>
+        <p><strong>Phone:</strong> <a href="tel:+442079460958">020 7946 0958</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">Click to Chat</a></p>
+        <h3>Office Hours (non-emergency)</h3>
+        <p>Mon–Fri 08:00–18:00<br />Sat 09:00–17:00<br />Sun 10:00–16:00</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0;">Request a Callback</h2>
+        <form class="lead-form" id="callback-form">
+          <input name="name" placeholder="Your Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <select name="time" required>
+            <option value="">Best time</option>
+            <option>Now</option>
+            <option>Within 30 min</option>
+            <option>Within 1 hour</option>
+            <option>Today</option>
+            <option>Tomorrow</option>
+          </select>
+          <button type="submit" class="submit-button">Request Callback</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:44px 0;">
+    <div class="container" style="max-width:860px;">
+      <h2 style="text-align:center;margin:0 0 18px;">FAQs</h2>
+
+      <details style="margin-bottom:12px;">
+        <summary style="cursor:pointer;font-weight:700;">How quickly will someone arrive?</summary>
+        <p>Central South London: 30–60 min; outer areas: 60–90 min. High-urgency calls are prioritised.</p>
+      </details>
+
+      <details style="margin-bottom:12px;">
+        <summary style="cursor:pointer;font-weight:700;">Do you charge a call-out fee?</summary>
+        <p>No. You only pay the tradesperson for work completed, at the agreed price.</p>
+      </details>
+
+      <details style="margin-bottom:12px;">
+        <summary style="cursor:pointer;font-weight:700;">Are your tradespeople insured?</summary>
+        <p>Yes. We verify public-liability insurance (minimum £2M) before admitting anyone to the network.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 South London Rapid Repairs</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
+  <script src="lead-capture.js"></script>
+</body>
+</html>
