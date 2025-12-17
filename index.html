@@ -78,3 +78,72 @@
     <div class="container header-inner">
       <a class="brand" href="index.html">
         <img src="Logo.png" alt="South London Rapid Repairs" />
+        <strong>South London Rapid Repairs</strong>
+      </a>
+      <nav class="nav">
+        <a href="emergency-roofing.html">Emergency Roofing</a>
+        <a href="emergency-carpentry.html">Emergency Carpentry</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 style="margin:0 0 12px;font-size:44px;line-height:1.1;">Emergency Roofing & Carpentry in South London</h1>
+        <p style="margin:0;max-width:60ch;font-size:18px;line-height:1.5;opacity:.95;">
+          Fast, reliable repairs when you need them most. We connect you with vetted local tradespeople — often within 60 minutes.
+        </p>
+        <p style="margin:18px 0 0;opacity:.9;">
+          Prefer to call? <a href="tel:+442079460958" style="color:#fff;font-weight:800;">020 7946 0958</a>
+        </p>
+      </div>
+
+      <div>
+        <form class="lead-form" id="home-form">
+          <h3>Get Emergency Help Now</h3>
+          <input name="name" placeholder="Your Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input name="postcode" placeholder="Postcode" required />
+          <select name="service" required>
+            <option value="">Select Service</option>
+            <option>Emergency Roofing</option>
+            <option>Emergency Carpentry</option>
+          </select>
+          <textarea name="description" placeholder="Brief description (what happened?)" rows="3" required></textarea>
+          <label style="display:flex;gap:10px;align-items:flex-start;margin:10px 0 12px;font-size:14px;">
+            <input type="checkbox" required style="margin-top:3px;" />
+            <span>I agree to be contacted about this enquiry.</span>
+          </label>
+          <button type="submit" class="submit-button">Get Emergency Help</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="container">
+      <p style="margin:0;font-weight:700;">We connect South London homeowners with vetted local tradespeople — fast.</p>
+      <div class="trust-badges">
+        <div class="badge">✅ ID & Insurance Verified</div>
+        <div class="badge">✅ DBS Checked</div>
+        <div class="badge">✅ References Required</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>We connect customers with independent contractors; South London Rapid Repairs is not the performing contractor.</p>
+      <p>© 2024 South London Rapid Repairs</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS + your form handler -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
+  <script src="lead-capture.js"></script>
+</body>
+</html>
