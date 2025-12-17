@@ -1,16 +1,19 @@
-## Hi there 👋
+# South London Rapid Repairs – static website
 
-<!--
-**southlondonrapidrepairs/southlondonrapidrepairs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Setup
+1. Drop the folder on any static host (Netlify, GitHub Pages, Firebase Hosting, etc.).
+2. Put your `logo.png` inside `assets/` (200×60 px works best).
+3. Edit `js/lead-capture.js` – swap the `alert()` for real EmailJS / Zapier / backend code.
+4. Replace phone number and email in HTML files if they ever change.
 
-Here are some ideas to get you started:
+## Customise
+- Colours: edit `:root` variables in `css/main.css`.
+- Copy: change text directly in HTML files.
+- Add new service page: duplicate `emergency-roofing.html`, rename, tweak content.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## SEO & tracking
+- Meta titles/descriptions are already unique per page.
+- Add your GA4 / Facebook-Pixel scripts before the closing `&lt;/head&gt;` on each page.
+- Connect to Google Search Console & Google Business Profile.
+
+Done — entire site is editable with any code editor (VS Code, Sublime, etc.).
