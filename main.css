@@ -1,250 +1,89 @@
-/* ================================
-   ROOT VARIABLES & RESET
-================================ */
 :root{
   --navy:#1a2332;
-  --orange:#ff6b35;
   --blue:#2c5282;
-  --white:#ffffff;
-  --gray:#f8f9fa;
+  --orange:#ff6b35;
   --red:#e53e3e;
+  --white:#fff;
+  --gray:#f8f9fa;
   --text:#2d3748;
-  --light-text:#718096;
+  --light:#718096;
   --border:#e2e8f0;
-  --radius:12px;
-  --max-width:1200px;
+  --radius:14px;
+  --max:1200px;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
   line-height:1.6;
-  color:var(--text);
-  background:var(--white);
 }
 
-img{max-width:100%;display:block}
-a{color:var(--orange);text-decoration:none}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:70px 0}
 
-/* ================================
-   LAYOUT
-================================ */
-.container{
-  max-width:var(--max-width);
-  margin:0 auto;
-  padding:0 20px;
-}
-
-section{
-  padding:60px 0;
-}
-
-.section-title{
-  text-align:center;
-  font-size:34px;
-  font-weight:800;
-  color:var(--navy);
-  margin-bottom:40px;
-}
-
-/* ================================
-   EMERGENCY BAR
-================================ */
+/* Emergency bar */
 .emergency-bar{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  background:var(--red);
-  color:var(--white);
-  padding:10px 0;
-  z-index:1000;
-  text-align:center;
-  font-size:14px;
-  font-weight:700;
+  position:fixed;top:0;left:0;right:0;
+  background:var(--red);color:#fff;
+  padding:10px 0;text-align:center;
+  font-weight:700;z-index:1000;
 }
+.emergency-bar a{color:#fff;margin:0 10px}
 
-.emergency-bar a{
-  color:var(--white);
-  margin:0 10px;
-  font-weight:800;
-}
-
-/* ================================
-   HEADER & NAV
-================================ */
+/* Header */
 .site-header{
-  background:var(--white);
-  padding:14px 0;
-  margin-top:44px;
-  border-bottom:1px solid rgba(26,35,50,.08);
+  position:sticky;top:44px;z-index:999;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,0,0,.06);
 }
-
 .header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  flex-wrap:wrap;
+  display:flex;align-items:center;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  color:var(--navy);
-  font-weight:800;
+.brand{display:flex;gap:14px;align-items:center;color:var(--navy);font-weight:800}
+.brand-badge{
+  width:52px;height:52px;border-radius:14px;
+  background:rgba(255,107,53,.12);
+  display:flex;align-items:center;justify-content:center;
 }
+.brand img{height:34px}
+.brand-text{display:flex;flex-direction:column}
+.brand-sub{font-size:12px;color:var(--light)}
 
-.brand img{
-  height:40px;
-  width:auto;
-}
+.nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--navy);font-weight:600}
 
-.nav{
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-.nav a{
-  color:var(--navy);
-  opacity:.9;
-  font-weight:600;
-}
-
-.nav a:hover{
-  opacity:1;
-  text-decoration:underline;
-}
-
-/* ================================
-   HERO
-================================ */
+/* Hero */
 .hero{
-  background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);
-  color:var(--white);
-  min-height:70vh;
-  display:flex;
-  align-items:center;
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  color:#fff;min-height:70vh;
+  display:flex;align-items:center;
 }
+.hero-grid{display:grid;gap:36px}
+.hero h1{font-size:46px;line-height:1.1}
+.hero p{font-size:18px;max-width:60ch}
+.hero-call a{color:#fff;font-weight:800}
 
-.hero-grid{
-  display:grid;
-  gap:32px;
-}
-
-@media(min-width:900px){
-  .hero-grid{
-    grid-template-columns:1.1fr .9fr;
-  }
-}
-
-.hero h1{
-  font-size:46px;
-  line-height:1.1;
-  margin-bottom:12px;
-}
-
-.hero p{
-  font-size:18px;
-  max-width:60ch;
-  opacity:.95;
-}
-
-.hero a{
-  color:var(--white);
-  font-weight:800;
-}
-
-/* ================================
-   FORMS
-================================ */
+/* Forms */
 .lead-form{
-  background:var(--white);
-  color:var(--text);
-  padding:26px;
-  border-radius:var(--radius);
+  background:#fff;padding:26px;border-radius:var(--radius);
 }
-
-.lead-form h3{
-  color:var(--navy);
-  margin-bottom:10px;
-}
-
 .lead-form input,
 .lead-form select,
 .lead-form textarea{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  border:2px solid var(--border);
-  border-radius:8px;
-  font-size:16px;
+  width:100%;padding:12px;margin:8px 0;
+  border:2px solid var(--border);border-radius:10px;
 }
-
-.lead-form input:focus,
-.lead-form select:focus,
-.lead-form textarea:focus{
-  outline:none;
-  border-color:var(--orange);
-}
-
 .submit-button{
-  width:100%;
-  background:var(--orange);
-  color:var(--white);
-  border:none;
-  padding:15px;
-  border-radius:10px;
-  font-size:18px;
-  font-weight:800;
-  cursor:pointer;
+  width:100%;background:var(--orange);color:#fff;
+  border:none;padding:15px;border-radius:999px;
+  font-weight:800;font-size:18px;
 }
 
-/* ================================
-   TRUST STRIP
-================================ */
-.trust-strip{
-  background:var(--gray);
-  padding:30px 0;
-  text-align:center;
-}
-
-.trust-strip p{
-  font-weight:800;
-}
-
-/* ================================
-   GRIDS
-================================ */
-.grid-2{
-  display:grid;
-  gap:40px;
-}
-
-.grid-3{
-  display:grid;
-  gap:30px;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-}
-
-/* ================================
-   FOOTER
-================================ */
-footer{
-  background:var(--navy);
-  color:var(--white);
-  padding:30px 0;
-  text-align:center;
-  font-size:14px;
-}
-
-footer p{
-  margin:8px 0;
-}
+/* Trust strip */
+.trust-strip{background:var(--gray);padding:30px 0;text-align:center}
+footer{background:var(--navy);color:#fff;padding:30px 0;text-align:center}
