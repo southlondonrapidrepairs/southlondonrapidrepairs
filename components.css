@@ -1,81 +1,30 @@
-/* ================================
-   CARDS
-================================ */
+.btn{
+  padding:10px 16px;border-radius:999px;
+  font-weight:800;font-size:14px;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-ghost{background:rgba(0,0,0,.05);color:var(--navy)}
+
 .card{
-  background:var(--white);
-  border:1px solid rgba(26,35,50,.08);
+  background:#fff;border:1px solid rgba(0,0,0,.06);
   border-radius:var(--radius);
-  padding:24px;
+  padding:24px;margin-top:16px;
   box-shadow:0 10px 30px rgba(0,0,0,.06);
-  transition:transform .2s ease,box-shadow .2s ease;
 }
 
-.card:hover{
-  transform:translateY(-2px);
-  box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
-
-.card h3{
-  margin-top:0;
-  font-size:20px;
-  font-weight:700;
-  color:var(--navy);
-}
-
-.card p{
-  margin-top:8px;
-  color:var(--light-text);
-}
-
-/* ================================
-   TRUST BADGES
-================================ */
-.trust-badges{
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  flex-wrap:wrap;
-  margin-top:16px;
-}
-
+.trust-badges{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
 .badge{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  font-size:14px;
-  background:var(--white);
-  padding:10px 14px;
-  border-radius:999px;
-  border:1px solid rgba(26,35,50,.08);
-  font-weight:600;
+  background:#fff;border-radius:999px;
+  padding:10px 14px;font-weight:600;
+  border:1px solid rgba(0,0,0,.08);
 }
 
-/* ================================
-   LEGAL BAR
-================================ */
-.legal-bar{
-  background:rgba(26,35,50,.05);
-  padding:20px;
-  border-radius:8px;
-  font-size:14px;
-  line-height:1.5;
-  color:var(--light-text);
-  margin-top:40px;
-}
-
-/* ================================
-   CTA BUTTON (OPTIONAL)
-================================ */
-.cta-button{
-  display:inline-block;
-  background:var(--orange);
-  color:var(--white);
-  padding:14px 28px;
-  border-radius:50px;
-  font-weight:800;
-  box-shadow:0 4px 15px rgba(255,107,53,.35);
-}
-
-.cta-button:hover{
-  background:#e55a2b;
+@media(prefers-reduced-motion:no-preference){
+  .card,.btn,.submit-button,.brand-badge{
+    transition:transform .25s ease,box-shadow .25s ease;
+  }
+  .card:hover{transform:translateY(-2px)}
+  .btn:hover{transform:translateY(-1px)}
+  .brand:hover .brand-badge{transform:translateY(-2px)}
 }
