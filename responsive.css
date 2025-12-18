@@ -4,23 +4,21 @@
   }
 }
 
-/* MOBILE/TABLET NAV FIXES (applies on your phone for sure) */
+/* MOBILE/TABLET NAV FIXES */
 @media (max-width:900px){
   .hero-grid{
     grid-template-columns:1fr;
   }
 
-  /* Force nav to wrap nicely instead of stretching off-screen */
   .nav{
     width:100%;
-    justify-content:flex-start;   /* IMPORTANT: not space-between */
+    justify-content:flex-start;
     flex-wrap:wrap;
     gap:10px;
     padding-left:6px;
     padding-right:6px;
   }
 
-  /* Make each link tappable + prevent edge clipping */
   .nav a{
     display:inline-block;
     padding:8px 10px;
@@ -45,4 +43,51 @@
   .page-hero h1{font-size:34px}
   .submit-button{font-size:16px}
   .emergency-bar{font-size:13px}
+}
+
+/* ================================
+   MOBILE STICKY CALL BAR
+================================ */
+.mobile-sticky-bar{
+  display:none;
+}
+
+@media (max-width:900px){
+  /* leave room so the bar doesn't cover content */
+  body{
+    padding-bottom:72px;
+  }
+
+  .mobile-sticky-bar{
+    display:flex;
+    position:fixed;
+    left:0; right:0; bottom:0;
+    z-index:2000;
+    gap:10px;
+    padding:10px 12px;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0,0,0,.08);
+  }
+
+  .mobile-sticky-bar a{
+    flex:1;
+    text-align:center;
+    padding:12px 14px;
+    border-radius:999px;
+    font-weight:900;
+    border:1px solid rgba(26,35,50,.12);
+  }
+
+  .mobile-sticky-bar .call{
+    background: var(--orange);
+    color:#fff;
+    border-color: transparent;
+  }
+
+  .mobile-sticky-bar .wa{
+    background: rgba(26,35,50,.06);
+    color: var(--navy);
+  }
 }
