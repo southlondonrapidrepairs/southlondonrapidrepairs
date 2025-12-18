@@ -91,3 +91,29 @@
     to{opacity:1;transform:translateY(0)}
   }
 }
+
+/* ================================
+   MICRO-INTERACTIONS (SAFE)
+================================ */
+.btn:active,
+.submit-button:active{
+  transform: scale(0.98);
+}
+
+.lead-form input:focus,
+.lead-form select:focus,
+.lead-form textarea:focus{
+  box-shadow: 0 0 0 4px rgba(255,107,53,.15);
+}
+
+/* Optional: if your JS ever writes a status message */
+.form-status{
+  margin-top:12px;
+  padding:12px 14px;
+  border-radius:12px;
+  font-size:14px;
+  border:1px solid rgba(26,35,50,.10);
+  background: rgba(26,35,50,.04);
+}
+.form-status.success{ background: rgba(16,185,129,.12); border-color: rgba(16,185,129,.25); }
+.form-status.error{ background: rgba(239,68,68,.12); border-color: rgba(239,68,68,.25); }
