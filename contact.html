@@ -3,77 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Book Emergency Repair | South London Rapid Repairs</title>
-  <meta name="description" content="Book emergency repair: phone, WhatsApp, form or schedule callback. Office hours, FAQs. South London coverage." />
+  <title>Contact | South London Rapid Repairs</title>
+  <meta name="description" content="Contact South London Rapid Repairs. Call, WhatsApp or request a callback for emergency roofing or carpentry in South London." />
 
-<link rel="stylesheet" href="main.css?v=2" />
-<link rel="stylesheet" href="components.css?v=2" />
-<link rel="stylesheet" href="responsive.css?v=2" />
-
-
-  <style>
-    :root { --navy:#1a2332; --orange:#ff6b35; --white:#fff; --gray:#f8f9fa; }
-    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--navy); }
-    .emergency-bar{ position:fixed; top:0; left:0; right:0; background:#e53e3e; color:#fff; padding:10px; z-index:1000; text-align:center; font-weight:600; }
-    .emergency-bar a{ color:#fff; margin:0 10px; text-decoration:none; }
-    .container{ max-width:1100px; margin:0 auto; padding:0 20px; }
-    .site-header{ background:#fff; padding:14px 0; margin-top:44px; border-bottom:1px solid rgba(26,35,50,.08); }
-    .header-inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-    .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--navy); }
-    .brand img{ height:40px; width:auto; }
-    .nav{ display:flex; gap:14px; flex-wrap:wrap; }
-    .nav a{ text-decoration:none; opacity:.9; }
-    .nav a:hover{ opacity:1; text-decoration:underline; }
-    .hero{ background:#2c5282; color:#fff; padding:44px 0; }
-    .card-grid{ display:grid; gap:24px; }
-    @media(min-width:900px){ .card-grid{ grid-template-columns: 1fr 1fr; } }
-    .card{ background:#fff; border:1px solid rgba(26,35,50,.08); border-radius:12px; padding:22px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
-    .lead-form input,.lead-form select{ width:100%; padding:12px; margin:8px 0; border:2px solid #cbd5e0; border-radius:8px; font-size:16px; box-sizing:border-box; }
-    .submit-button{ background:var(--orange); color:#fff; border:none; padding:14px 16px; width:100%; border-radius:10px; font-size:16px; font-weight:800; cursor:pointer; }
-    footer{ background:var(--navy); color:#fff; padding:26px 0; text-align:center; font-size:14px; margin-top:30px; }
-  </style>
+  <link rel="stylesheet" href="main.css?v=6" />
+  <link rel="stylesheet" href="components.css?v=6" />
+  <link rel="stylesheet" href="responsive.css?v=6" />
 </head>
+
 <body>
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442079460958">020 7946 0958</a>
-    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">WhatsApp</a>
+    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London">WhatsApp</a>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="South London Rapid Repairs" />
-        <strong>South London Rapid Repairs</strong>
+        <span class="brand-badge"><img src="logo.png" alt="South London Rapid Repairs" /></span>
+        <span class="brand-text">
+          <strong>South London Rapid Repairs</strong>
+          <span class="brand-sub">24/7 Emergency Roofing & Carpentry</span>
+        </span>
       </a>
+
       <nav class="nav">
-        <a href="emergency-roofing.html">Emergency Roofing</a>
-        <a href="emergency-carpentry.html">Emergency Carpentry</a>
+        <a href="emergency-roofing.html">Roofing</a>
+        <a href="emergency-carpentry.html">Carpentry</a>
         <a href="how-it-works.html">How it works</a>
         <a href="contact.html">Contact</a>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London">WhatsApp</a>
+          <a class="btn btn-primary" href="tel:+442079460958">Call now</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container" style="text-align:center;">
-      <h1 style="margin:0 0 10px;">Contact South London Rapid Repairs</h1>
-      <p style="margin:0;opacity:.95;">Call, WhatsApp, or request a callback.</p>
-    </div>
-  </section>
-
-  <section style="padding:44px 0;background:#f8f9fa;">
-    <div class="container card-grid">
-      <div class="card">
-        <h2 style="margin-top:0;">24/7 Emergency</h2>
-        <p><strong>Phone:</strong> <a href="tel:+442079460958">020 7946 0958</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">Click to Chat</a></p>
-        <h3>Office Hours (non-emergency)</h3>
-        <p>Mon–Fri 08:00–18:00<br />Sat 09:00–17:00<br />Sun 10:00–16:00</p>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div>
+        <h1>Contact us</h1>
+        <p>For emergencies, calling is fastest. If you prefer, WhatsApp or request a callback.</p>
+        <div class="mini-cta-row">
+          <a class="btn btn-primary" href="tel:+442079460958">Call 020 7946 0958</a>
+          <a class="btn btn-ghost" href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London">WhatsApp</a>
+        </div>
       </div>
 
       <div class="card">
-        <h2 style="margin-top:0;">Request a Callback</h2>
+        <h3>Request a callback</h3>
+        <p class="muted">We’ll call you as soon as possible. For immediate emergencies, please call.</p>
+
         <form class="lead-form" id="callback-form">
           <input name="name" placeholder="Your Name" required />
           <input type="tel" name="phone" placeholder="Phone Number" required />
@@ -91,29 +74,34 @@
     </div>
   </section>
 
-  <section style="padding:44px 0;">
-    <div class="container" style="max-width:860px;">
-      <h2 style="text-align:center;margin:0 0 18px;">FAQs</h2>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Quick answers</h2>
 
-      <details style="margin-bottom:12px;">
-        <summary style="cursor:pointer;font-weight:700;">How quickly will someone arrive?</summary>
-        <p>Central South London: 30–60 min; outer areas: 60–90 min. High-urgency calls are prioritised.</p>
-      </details>
+      <div class="grid-3">
+        <div class="card">
+          <h3>How fast is response?</h3>
+          <p>Often within 60 minutes depending on your exact area and current demand.</p>
+        </div>
+        <div class="card">
+          <h3>Any call-out fee?</h3>
+          <p>No call-out fee from us. You agree a quote directly with the tradesperson before work starts.</p>
+        </div>
+        <div class="card">
+          <h3>Are tradespeople vetted?</h3>
+          <p>Yes — ID, insurance and references are checked before joining our network.</p>
+        </div>
+      </div>
 
-      <details style="margin-bottom:12px;">
-        <summary style="cursor:pointer;font-weight:700;">Do you charge a call-out fee?</summary>
-        <p>No. You only pay the tradesperson for work completed, at the agreed price.</p>
-      </details>
-
-      <details style="margin-bottom:12px;">
-        <summary style="cursor:pointer;font-weight:700;">Are your tradespeople insured?</summary>
-        <p>Yes. We verify public-liability insurance (minimum £2M) before admitting anyone to the network.</p>
-      </details>
+      <div class="legal-bar">
+        <strong>Important:</strong> South London Rapid Repairs connects customers with independent contractors; we are not the performing contractor. You pay the tradesperson directly.
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
+      <p>We connect customers with independent contractors; South London Rapid Repairs is not the performing contractor.</p>
       <p>© 2024 South London Rapid Repairs</p>
     </div>
   </footer>
@@ -123,5 +111,3 @@
   <script src="lead-capture.js"></script>
 </body>
 </html>
-
-
