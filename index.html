@@ -4,41 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency Roofing & Carpentry South London | 24/7 Rapid Repairs</title>
-  <meta name="description" content="Emergency roofing and carpentry services in South London. Vetted tradespeople, 24/7 response. Get help fast - call now or WhatsApp for immediate assistance." />
+  <meta name="description" content="Emergency roofing and carpentry in South London. Vetted tradespeople, fast response. Call or WhatsApp 24/7." />
 
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="components.css" />
-  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="main.css?v=5" />
+  <link rel="stylesheet" href="components.css?v=5" />
+  <link rel="stylesheet" href="responsive.css?v=5" />
 </head>
 
 <body>
+  <!-- Emergency Bar -->
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442079460958">020 7946 0958</a>
-    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London" rel="noopener">WhatsApp</a>
+    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London">WhatsApp</a>
   </div>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <img src="logo.png" alt="South London Rapid Repairs" />
-        <strong>South London Rapid Repairs</strong>
+        <span class="brand-badge">
+          <img src="logo.png" alt="South London Rapid Repairs" />
+        </span>
+        <span class="brand-text">
+          <strong>South London Rapid Repairs</strong>
+          <span class="brand-sub">24/7 Emergency Roofing & Carpentry</span>
+        </span>
       </a>
+
       <nav class="nav">
-        <a href="emergency-roofing.html">Emergency Roofing</a>
-        <a href="emergency-carpentry.html">Emergency Carpentry</a>
+        <a href="emergency-roofing.html">Roofing</a>
+        <a href="emergency-carpentry.html">Carpentry</a>
         <a href="how-it-works.html">How it works</a>
         <a href="contact.html">Contact</a>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="https://wa.me/442079460958?text=I%20need%20emergency%20repair%20help%20in%20South%20London">WhatsApp</a>
+          <a class="btn btn-primary" href="tel:+442079460958">Call now</a>
+        </div>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <h1>Emergency Roofing & Carpentry in South London</h1>
-        <p>Fast, reliable repairs when you need them most. We connect you with vetted local tradespeople — often within 60 minutes.</p>
-        <p>Prefer to call? <a href="tel:+442079460958" style="color:#fff;font-weight:800;">020 7946 0958</a></p>
+        <p>Fast, calm, professional help when things go wrong. We connect you with vetted local tradespeople — often within 60 minutes.</p>
+        <p class="hero-call">
+          Prefer to call? <a href="tel:+442079460958">020 7946 0958</a>
+        </p>
       </div>
 
       <div>
@@ -52,119 +68,42 @@
             <option>Emergency Roofing</option>
             <option>Emergency Carpentry</option>
           </select>
-          <textarea name="description" placeholder="Brief description (what happened?)" rows="3" required></textarea>
-          <label style="display:flex;gap:10px;align-items:flex-start;margin:10px 0 12px;font-size:14px;">
-            <input type="checkbox" required style="margin-top:3px;" />
-            <span>I agree to be contacted about this enquiry.</span>
+          <textarea name="description" placeholder="Brief description of the problem" rows="3" required></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>I agree to be contacted about this enquiry</span>
           </label>
+
           <button type="submit" class="submit-button">Get Emergency Help</button>
         </form>
 
-        <div class="what-next card" style="margin-top:16px;">
+        <div class="card what-next">
           <h4>What happens next?</h4>
-          <ul style="margin:8px 0 0;padding-left:20px;font-size:14px;">
-            <li>We’ll call you within 15 minutes (24/7)</li>
-            <li>Confirm your location and issue</li>
-            <li>Match you with the nearest vetted tradesperson</li>
-            <li>You pay them directly after the job—no hidden fees</li>
+          <ul>
+            <li>We call you within 15 minutes (24/7)</li>
+            <li>Confirm the issue and your location</li>
+            <li>Match you with a vetted local tradesperson</li>
+            <li>You pay them directly — no hidden fees</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Trust Strip -->
   <div class="trust-strip">
     <div class="container">
-      <p style="margin:0;font-weight:700;">We connect South London homeowners with vetted local tradespeople — fast.</p>
+      <p>Trusted by South London homeowners, landlords & letting agents</p>
       <div class="trust-badges">
-        <div class="badge">✅ ID & Insurance Verified</div>
-        <div class="badge">✅ DBS Checked</div>
-        <div class="badge">✅ References Required</div>
+        <div class="badge">ID & Insurance Verified</div>
+        <div class="badge">DBS Checked</div>
+        <div class="badge">References Required</div>
       </div>
     </div>
   </div>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">How it works</h2>
-      <div class="grid-3">
-        <div class="card">
-          <div style="width:60px;height:60px;background:var(--orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin:0 auto 16px;">1</div>
-          <h3>Contact Us</h3>
-          <p>Call, WhatsApp or fill in the form 24/7. Tell us the problem and your postcode.</p>
-        </div>
-        <div class="card">
-          <div style="width:60px;height:60px;background:var(--orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin:0 auto 16px;">2</div>
-          <h3>Get Matched</h3>
-          <p>We alert the nearest available, vetted tradesperson in our network.</p>
-        </div>
-        <div class="card">
-          <div style="width:60px;height:60px;background:var(--orange);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;margin:0 auto 16px;">3</div>
-          <h3>Problem Solved</h3>
-          <p>They arrive, quote and fix the issue. You pay them directly—no hidden fees.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="background:var(--gray);">
-    <div class="container">
-      <h2 class="section-title">Coverage</h2>
-      <p style="text-align:center;margin:0 0 30px;">All South London postcodes covered — usually within 60 minutes.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h4>Central South</h4>
-          <p>SE1, SE11, SE16, SE17</p>
-        </div>
-        <div class="card">
-          <h4>South East</h4>
-          <p>SE5, SE15, SE22, SE24</p>
-        </div>
-        <div class="card">
-          <h4>South West</h4>
-          <p>SW2, SW4, SW8, SW9</p>
-        </div>
-      </div>
-      <p style="text-align:center;margin:30px 0 0;">…plus every SE & SW postcode. If you're in doubt — call us.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Why choose us</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>⚡ 24/7 Emergency Response</h3>
-          <p>Real people answer the phone at 3 am. No answer-phone loops.</p>
-        </div>
-        <div class="card">
-          <h3>🔍 Vetted & Insured Tradespeople</h3>
-          <p>ID, insurance, references and DBS checks verified before they join our network.</p>
-        </div>
-        <div class="card">
-          <h3>📍 Local South London Experts</h3>
-          <p>Specialists who know local building styles and weather patterns — no call-out fees.</p>
-        </div>
-        <div class="card">
-          <h3>💬 Transparent Pricing</h3>
-          <p>You receive a clear quote before any work starts. No hidden extras.</p>
-        </div>
-        <div class="card">
-          <h3>🛡️ Scam-Safe Process</h3>
-          <p>We match you with vetted tradespeople — you choose whether to proceed after the quote.</p>
-        </div>
-        <div class="card">
-          <h3>⏱️ Fast Matching</h3>
-          <p>We contact the nearest available specialist — often within 60 minutes.</p>
-        </div>
-      </div>
-
-      <div class="legal-bar">
-        <p><strong>Important:</strong> South London Rapid Repairs connects customers with independent contractors; we are not the performing contractor. You pay the tradesperson directly.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>We connect customers with independent contractors; South London Rapid Repairs is not the performing contractor.</p>
@@ -172,6 +111,7 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
   <script src="lead-capture.js"></script>
