@@ -1,5 +1,4 @@
 /* === ROOT & RESET === */
-body { outline: 6px solid lime !important; }
 
 :root{
     --navy:#1a2332;
@@ -82,4 +81,5 @@ section{padding:44px 0}
     .submit-button{transition:background .3s,transform .2s}
     .nav a{transition:opacity .2s}
 }
+
 
