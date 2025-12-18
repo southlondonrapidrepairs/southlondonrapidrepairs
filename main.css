@@ -182,3 +182,46 @@ footer p{margin:8px 0}
 .muted{color:rgba(255,255,255,.85)}
 .bullet-check{margin:14px 0 0; padding-left:18px}
 .bullet-check li{margin:8px 0}
+
+/* ================================
+   TRUST BOOSTERS + TESTIMONIALS
+================================ */
+.trust-under-hero{
+  margin-top:18px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  opacity:.95;
+  font-weight:800;
+}
+
+.trust-under-hero .chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.testimonials{
+  background: var(--gray);
+}
+.testimonial-quote{
+  font-size:14px;
+  color: var(--text);
+}
+.testimonial-meta{
+  margin-top:12px;
+  font-size:13px;
+  color: var(--light);
+  font-weight:800;
+}
+.small-note{
+  text-align:center;
+  color: var(--light);
+  font-size:12px;
+  margin-top:14px;
+}
