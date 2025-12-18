@@ -4,61 +4,23 @@
   }
 }
 
+/* MOBILE/TABLET NAV FIXES (applies on your phone for sure) */
 @media (max-width:900px){
   .hero-grid{
     grid-template-columns:1fr;
   }
 
+  /* Force nav to wrap nicely instead of stretching off-screen */
   .nav{
     width:100%;
-    justify-content:space-between;
-  }
-
-  .nav-cta{
-    width:100%;
-    justify-content:flex-start;
-    margin-left:0;
-    margin-top:10px;
-  }
-}
-
-/* === SMALL MOBILE FIXES === */
-@media (max-width:480px){
-  .hero h1{
-    font-size:34px;
-  }
-
-  .page-hero h1{
-    font-size:34px;
-  }
-
-  .submit-button{
-    font-size:16px;
-  }
-
-  .emergency-bar{
-    font-size:13px;
-  }
-
-  /* Prevent nav items clipping the screen edges */
-  .site-header{
-    padding-left:0;
-    padding-right:0;
-  }
-
-  .header-inner{
-    padding-left:8px;
-    padding-right:8px;
-  }
-
-  .nav{
-    width:100%;
-    justify-content:flex-start;
+    justify-content:flex-start;   /* IMPORTANT: not space-between */
+    flex-wrap:wrap;
     gap:10px;
-    padding-left:2px;
-    padding-right:2px;
+    padding-left:6px;
+    padding-right:6px;
   }
 
+  /* Make each link tappable + prevent edge clipping */
   .nav a{
     display:inline-block;
     padding:8px 10px;
@@ -70,6 +32,17 @@
   .nav-cta{
     width:100%;
     justify-content:flex-start;
+    margin-left:0;
     margin-top:10px;
+    padding-left:6px;
+    padding-right:6px;
   }
+}
+
+/* EXTRA SMALL POLISH */
+@media (max-width:480px){
+  .hero h1{font-size:34px}
+  .page-hero h1{font-size:34px}
+  .submit-button{font-size:16px}
+  .emergency-bar{font-size:13px}
 }
