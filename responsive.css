@@ -1,0 +1,17 @@
+/* === MOBILE FIRST ENHANCEMENTS === */
+@media(max-width:768px){
+    .hero h1{font-size:32px}
+    .hero-grid{grid-template-columns:1fr}
+    .trust-badges{flex-direction:column;align-items:center}
+    .trust-badges-modern{flex-direction:column;align-items:center}
+    .grid-2{grid-template-columns:1fr}
+    .card{margin:0 10px}
+    .legal-bar{margin:20px 10px 0}
+}
+
+@media(max-width:480px){
+    .emergency-bar{font-size:13px}
+    .brand{font-size:14px}
+    .nav{gap:10px;font-size:14px}
+    .submit-button{font-size:16px}
+}
