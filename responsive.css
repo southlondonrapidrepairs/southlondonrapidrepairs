@@ -13,4 +13,42 @@
   .page-hero h1{font-size:34px}
   .submit-button{font-size:16px}
   .emergency-bar{font-size:13px}
+
+  /* Mobile nav: prevent links clipping at edges */
+@media (max-width: 480px){
+  .site-header { padding-left: 0; padding-right: 0; }
+
+  /* Give the whole header content breathing room */
+  .header-inner{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* Make nav wrap cleanly and never touch the edges */
+  .nav{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* Ensure each link has tappable padding and can't clip */
+  .nav a{
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: rgba(26,35,50,.04);
+    opacity: 1;
+  }
+
+  /* Keep the CTA row aligned and not clipped */
+  .nav-cta{
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
 }
+
+}
+
