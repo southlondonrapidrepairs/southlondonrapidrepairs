@@ -111,10 +111,26 @@
     <a class="call" href="tel:+442080583861">Call now</a>
   </div>
 
+  <!-- Timestamp injector (use {{submitted_at}} in EmailJS template) -->
+  <script>
+    document.addEventListener('submit', function (e) {
+      const form = e.target;
+      if (!(form instanceof HTMLFormElement)) return;
+
+      let field = form.querySelector('input[name="submitted_at"]');
+      if (!field) {
+        field = document.createElement('input');
+        field.type = 'hidden';
+        field.name = 'submitted_at';
+        form.appendChild(field);
+      }
+
+      field.value = new Date().toISOString();
+    }, true);
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
   <script src="lead-capture.js"></script>
 </body>
 </html>
-
-
