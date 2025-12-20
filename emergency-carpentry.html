@@ -15,7 +15,7 @@
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442080583861">020 8058 3861</a>
-    <a href="https://wa.me/442079460958?text=I%20need%20emergency%20carpentry%20help%20in%20South%20London">WhatsApp</a>
+    <a href="https://wa.me/message/UQT7P5J26OYKC1">WhatsApp</a>
   </div>
 
   <header class="site-header">
@@ -35,7 +35,7 @@
         <a href="contact.html">Contact</a>
 
         <div class="nav-cta">
-          <a class="btn btn-ghost" href="https://wa.me/442079460958?text=I%20need%20emergency%20carpentry%20help%20in%20South%20London">WhatsApp</a>
+          <a class="btn btn-ghost" href="https://wa.me/message/UQT7P5J26OYKC1">WhatsApp</a>
           <a class="btn btn-primary" href="tel:+442080583861">Call now</a>
         </div>
       </nav>
@@ -125,10 +125,26 @@
     <a class="call" href="tel:+442080583861">Call now</a>
   </div>
 
+  <!-- Timestamp injector -->
+  <script>
+    document.addEventListener('submit', function (e) {
+      const form = e.target;
+      if (!(form instanceof HTMLFormElement)) return;
+
+      let field = form.querySelector('input[name="submitted_at"]');
+      if (!field) {
+        field = document.createElement('input');
+        field.type = 'hidden';
+        field.name = 'submitted_at';
+        form.appendChild(field);
+      }
+
+      field.value = new Date().toISOString();
+    }, true);
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("pOMWQQZPQ05LNrJvQ");</script>
   <script src="lead-capture.js"></script>
 </body>
 </html>
-
-
