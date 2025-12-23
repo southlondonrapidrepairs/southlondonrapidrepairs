@@ -1,8 +1,12 @@
+/* ================================
+   components.css (reusable UI)
+================================ */
+
 /* Buttons */
 .btn{
   padding:10px 16px;
   border-radius:999px;
-  font-weight:900;
+  font-weight:1000;
   font-size:14px;
   display:inline-flex;
   align-items:center;
@@ -19,7 +23,7 @@
   box-shadow:0 10px 22px rgba(255,107,53,.22);
 }
 .btn-ghost{
-  background:rgba(26,35,50,.05);
+  background:rgba(26,35,50,.06);
   color:var(--navy);
 }
 
@@ -28,73 +32,85 @@
   background:#fff;
   border:1px solid rgba(0,0,0,.06);
   border-radius:var(--radius);
-  padding:24px;
+  padding:22px;
   box-shadow:0 10px 30px rgba(0,0,0,.06);
 }
-.card h3{color:var(--navy);margin:0 0 6px}
-.card h4{color:var(--navy);margin:0 0 6px}
-.card ul{margin:10px 0 0;padding-left:18px}
-.card li{margin:8px 0;color:var(--text)}
-.what-next{margin-top:16px}
+.card h3{ color:var(--navy); margin:0 0 6px; }
+.card h4{ color:var(--navy); margin:0 0 6px; }
+.card ul{ margin:10px 0 0; padding-left:18px; }
+.card li{ margin:8px 0; color:var(--text); }
 
-/* Badges */
+.what-next{ margin-top:16px; }
+
+/* Trust badges */
 .trust-badges{
   display:flex;
   justify-content:center;
-  gap:16px;
+  gap:12px;
   flex-wrap:wrap;
-  margin-top:14px;
 }
 .badge{
   background:#fff;
   border-radius:999px;
   padding:10px 14px;
-  font-weight:700;
+  font-weight:1000;
   border:1px solid rgba(0,0,0,.08);
+  color:var(--navy);
+}
+
+/* Chips */
+.chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.18);
+  color:#fff;
+  font-weight:1000;
+  font-size:13px;
+  white-space:nowrap;
 }
 
 /* Legal bar */
 .legal-bar{
-  margin-top:32px;
-  padding:18px;
-  border-radius:12px;
+  margin-top:26px;
+  padding:16px;
+  border-radius:14px;
   background:rgba(26,35,50,.06);
   color:var(--text);
-  border:1px solid rgba(26,35,50,.08);
+  border:1px solid rgba(26,35,50,.10);
 }
 
-/* Smooth motion (subtle) */
+/* Motion (subtle) */
 @media (prefers-reduced-motion: no-preference){
   .btn,
   .submit-button,
   .card,
   .brand-badge,
-  .nav a{
+  .nav > a{
     transition: transform .22s ease, box-shadow .22s ease, background .22s ease, opacity .22s ease;
   }
-  .btn:hover{transform:translateY(-1px)}
-  .btn-primary:hover{box-shadow:0 14px 30px rgba(255,107,53,.28)}
-  .card:hover{transform:translateY(-2px); box-shadow:0 15px 40px rgba(0,0,0,.08)}
-  .brand:hover .brand-badge{transform:translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,.08)}
-  .submit-button:hover{transform:translateY(-1px)}
-  .nav a:hover{opacity:1}
+
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary:hover{ box-shadow:0 14px 30px rgba(255,107,53,.28); }
+  .card:hover{ transform:translateY(-2px); box-shadow:0 15px 40px rgba(0,0,0,.08); }
+  .brand:hover .brand-badge{ transform:translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,.10); }
+  .submit-button:hover{ transform:translateY(-1px); }
 
   /* gentle load animation */
-  .hero h1,
-  .page-hero h1{animation:fadeUp .55s ease both}
-  .hero p,
-  .page-hero p{animation:fadeUp .65s ease both}
-  .lead-form{animation:fadeUp .75s ease both}
+  .hero h1, .page-hero h1{ animation:fadeUp .55s ease both; }
+  .hero p, .page-hero p{ animation:fadeUp .65s ease both; }
+  .lead-form{ animation:fadeUp .75s ease both; }
 
   @keyframes fadeUp{
-    from{opacity:0;transform:translateY(10px)}
-    to{opacity:1;transform:translateY(0)}
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
   }
 }
 
-/* ================================
-   MICRO-INTERACTIONS (SAFE)
-================================ */
+/* Micro-interactions */
 .btn:active,
 .submit-button:active{
   transform: scale(0.98);
@@ -103,10 +119,12 @@
 .lead-form input:focus,
 .lead-form select:focus,
 .lead-form textarea:focus{
+  outline:none;
   box-shadow: 0 0 0 4px rgba(255,107,53,.15);
+  border-color: rgba(255,107,53,.55);
 }
 
-/* Optional: if your JS ever writes a status message */
+/* Optional status message */
 .form-status{
   margin-top:12px;
   padding:12px 14px;
