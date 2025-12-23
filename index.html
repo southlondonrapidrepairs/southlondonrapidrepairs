@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency Roofing & Carpentry South London | 24/7 Rapid Repairs</title>
-  <meta name="description" content="Emergency roofing and carpentry in South London. Vetted tradespeople, fast response. Call or WhatsApp 24/7." />
+  <meta name="description" content="Emergency roofing and carpentry in South London. Fast response. Clear quote before work. Call or WhatsApp 24/7." />
 
-  <link rel="stylesheet" href="main.css?v=7" />
-  <link rel="stylesheet" href="components.css?v=7" />
-  <link rel="stylesheet" href="responsive.css?v=7" />
+  <link rel="stylesheet" href="main.css?v=9" />
+  <link rel="stylesheet" href="components.css?v=9" />
+  <link rel="stylesheet" href="responsive.css?v=9" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442080583861">020 8058 3861</a>
@@ -20,9 +22,9 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="South London Rapid Repairs home">
         <span class="brand-badge">
-          <img src="logo.png" alt="South London Rapid Repairs" />
+          <img src="logo.png" alt="South London Rapid Repairs logo" />
         </span>
         <span class="brand-text">
           <strong>South London Rapid Repairs</strong>
@@ -30,7 +32,7 @@
         </span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="emergency-roofing.html">Roofing</a>
         <a href="emergency-carpentry.html">Carpentry</a>
         <a href="how-it-works.html">How it works</a>
@@ -44,95 +46,204 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Emergency Roofing & Carpentry in South London</h1>
-        <p>Fast, calm, professional help when things go wrong. We connect you with vetted local tradespeople — often within 60 minutes.</p>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Emergency Roofing & Carpentry in South London</h1>
+          <p>Fast, calm, professional help when things go wrong. We connect you with vetted local tradespeople — often within 60 minutes.</p>
 
-        <div class="trust-under-hero">
-          <span class="chip">✅ No call-out fee</span>
-          <span class="chip">✅ Vetted & insured</span>
-          <span class="chip">✅ Quote before work</span>
+          <div class="trust-under-hero">
+            <span class="chip">✅ No call-out fee from us</span>
+            <span class="chip">✅ Quote before work</span>
+            <span class="chip">✅ Pay the tradesperson directly</span>
+          </div>
+
+          <div class="trust-promise">
+            <h3>Our trust promise</h3>
+            <ul>
+              <li><strong>No payments to us.</strong> We don’t take deposits over the phone.</li>
+              <li><strong>Clear quote first.</strong> You accept the price before work starts.</li>
+              <li><strong>Local-only.</strong> South London coverage, no national call centres.</li>
+            </ul>
+            <p class="small-note">If you’re unsure, call us — we’ll explain the process in plain English.</p>
+          </div>
+
+          <p class="hero-call">
+            Prefer to call? <a href="tel:+442080583861">020 8058 3861</a>
+          </p>
         </div>
 
-        <p class="hero-call">
-          Prefer to call? <a href="tel:+442080583861">020 8058 3861</a>
+        <div>
+          <form class="lead-form" id="home-form">
+            <h3>Get emergency help now</h3>
+
+            <input type="hidden" name="source_page" value="index" />
+            <input type="hidden" name="service" value="" />
+
+            <input name="name" placeholder="Your Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input name="postcode" placeholder="Postcode" required />
+
+            <select name="service" required>
+              <option value="">Select Service</option>
+              <option>Emergency Roofing</option>
+              <option>Emergency Carpentry</option>
+            </select>
+
+            <textarea name="description" placeholder="Brief description of the problem" rows="3" required></textarea>
+
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>I agree to be contacted about this enquiry</span>
+            </label>
+
+            <button type="submit" class="submit-button">Get emergency help</button>
+          </form>
+
+          <div class="card what-next">
+            <h4>What happens next?</h4>
+            <ul>
+              <li>We confirm the issue and your postcode</li>
+              <li>We match you with an available local tradesperson</li>
+              <li>You get a quote before work starts</li>
+              <li>You pay them directly (no hidden fees)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container">
+        <p>Built for homeowners, landlords & letting agents who need fast, legitimate help</p>
+        <div class="trust-badges">
+          <div class="badge">ID verified</div>
+          <div class="badge">Insurance checked</div>
+          <div class="badge">References checked</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Who we are</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Local dispatch line</h3>
+            <p>We organise emergency roofing and carpentry call-outs across South London. No marketplaces. No bidding wars.</p>
+          </div>
+          <div class="card">
+            <h3>Vetted local trades</h3>
+            <p>We work with independent roofers and carpenters who can respond fast — especially for leaks, storm damage and make-safe work.</p>
+          </div>
+          <div class="card">
+            <h3>Clear + calm process</h3>
+            <p>You get a quote before work starts. You pay the tradesperson directly. We’re here to keep the process simple under pressure.</p>
+          </div>
+        </div>
+
+        <div class="legal-bar">
+          <strong>Important:</strong> South London Rapid Repairs connects customers with independent contractors; we are not the performing contractor. You pay the tradesperson directly.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Emergency guidance (quick, practical)</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>If your roof is leaking</h3>
+            <ul>
+              <li>Move valuables away from water and place a bucket underneath the leak.</li>
+              <li>If water is near electrics, switch off power at the consumer unit if safe.</li>
+              <li>Take 2–3 photos for the roofer (inside + outside if safe).</li>
+              <li>Send your postcode + photos on WhatsApp for fastest triage.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>If you’ve had a break-in / damage</h3>
+            <ul>
+              <li>If anyone is inside or it’s ongoing: call 999.</li>
+              <li>Don’t confront anyone. Keep yourself safe.</li>
+              <li>Take photos of damage for insurance/police once safe.</li>
+              <li>We can help arrange boarding / make-safe work quickly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="small-note">This guidance is general. If you’re in immediate danger, call emergency services first.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Areas we cover</h2>
+
+        <div class="card">
+          <p class="muted">We cover South London and nearby areas. If you’re unsure, send your <strong>postcode</strong> on WhatsApp and we’ll confirm quickly.</p>
+          <div class="areas">
+            <span class="area-chip">Croydon</span>
+            <span class="area-chip">Bromley</span>
+            <span class="area-chip">Sutton</span>
+            <span class="area-chip">Lambeth</span>
+            <span class="area-chip">Southwark</span>
+            <span class="area-chip">Lewisham</span>
+            <span class="area-chip">Greenwich</span>
+            <span class="area-chip">Merton</span>
+            <span class="area-chip">Wandsworth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Reviews (what we’ll publish + how)</h2>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>No fake testimonials</h3>
+            <p>We will only publish reviews from genuine customers, collected after real call-outs.</p>
+          </div>
+          <div class="card">
+            <h3>How we collect them</h3>
+            <p>After a job, we send a review request link by SMS/WhatsApp. The review is tied to a real enquiry.</p>
+          </div>
+          <div class="card">
+            <h3>What we publish</h3>
+            <p>Clear feedback on speed, professionalism, pricing clarity, and whether the issue was made safe.</p>
+          </div>
+        </div>
+
+        <p class="small-note">If you want, I can also add a simple “Review us” placeholder section once you set up Google Business Profile.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-strong">South London Rapid Repairs</p>
+        <p class="footer-muted">Emergency Roofing & Carpentry dispatch (not the performing contractor).</p>
+        <p class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <span class="dot">•</span>
+          <a href="terms.html">Terms</a>
         </p>
       </div>
 
-      <div>
-        <form class="lead-form" id="home-form">
-          <h3>Get Emergency Help Now</h3>
-          <input name="name" placeholder="Your Name" required />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <input name="postcode" placeholder="Postcode" required />
-          <select name="service" required>
-            <option value="">Select Service</option>
-            <option>Emergency Roofing</option>
-            <option>Emergency Carpentry</option>
-          </select>
-          <textarea name="description" placeholder="Brief description of the problem" rows="3" required></textarea>
-
-          <label class="checkbox">
-            <input type="checkbox" required />
-            <span>I agree to be contacted about this enquiry</span>
-          </label>
-
-          <button type="submit" class="submit-button">Get Emergency Help</button>
-        </form>
-
-        <div class="card what-next">
-          <h4>What happens next?</h4>
-          <ul>
-            <li>We call you within 15 minutes (24/7)</li>
-            <li>Confirm the issue and your location</li>
-            <li>Match you with a vetted local tradesperson</li>
-            <li>You pay them directly — no hidden fees</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="trust-strip">
-    <div class="container">
-      <p>Trusted by South London homeowners, landlords & letting agents</p>
-      <div class="trust-badges">
-        <div class="badge">ID & Insurance Verified</div>
-        <div class="badge">DBS Checked</div>
-        <div class="badge">References Required</div>
-      </div>
-    </div>
-  </div>
-
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-title">What customers say</h2>
-
-      <div class="grid-3">
-        <div class="card">
-          <p class="testimonial-quote">“Called late at night after storm damage. Got a quick call back and a roofer out fast. Clear price before work started.”</p>
-          <div class="testimonial-meta">— Homeowner, SE15</div>
-        </div>
-        <div class="card">
-          <p class="testimonial-quote">“Had a broken door frame after a break-in. They matched me with someone who made it safe same day.”</p>
-          <div class="testimonial-meta">— Landlord, SW9</div>
-        </div>
-        <div class="card">
-          <p class="testimonial-quote">“Professional, calm, and easy. WhatsApp was simple and the carpenter quoted before doing anything.”</p>
-          <div class="testimonial-meta">— Letting Agent, SE24</div>
-        </div>
+      <div class="footer-cta">
+        <a class="btn btn-ghost" href="https://wa.me/message/UQT7P5J26OYKC1">WhatsApp</a>
+        <a class="btn btn-primary" href="tel:+442080583861">Call 020 8058 3861</a>
       </div>
 
-      <p class="small-note">Examples shown for layout only — replace with real reviews as you collect them.</p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>We connect customers with independent contractors; South London Rapid Repairs is not the performing contractor.</p>
-      <p>© 2024 South London Rapid Repairs</p>
+      <div class="footer-small">
+        <p>© 2024 South London Rapid Repairs</p>
+      </div>
     </div>
   </footer>
 
@@ -141,21 +252,25 @@
     <a class="call" href="tel:+442080583861">Call now</a>
   </div>
 
-  <!-- Timestamp injector (use {{submitted_at}} in EmailJS template) -->
   <script>
+    // Adds timestamp + source URL to every submission (EmailJS template can use {{submitted_at}} and {{source_url}})
     document.addEventListener('submit', function (e) {
       const form = e.target;
       if (!(form instanceof HTMLFormElement)) return;
 
-      let field = form.querySelector('input[name="submitted_at"]');
-      if (!field) {
-        field = document.createElement('input');
-        field.type = 'hidden';
-        field.name = 'submitted_at';
-        form.appendChild(field);
-      }
+      const upsert = (name, value) => {
+        let el = form.querySelector(`input[name="${name}"]`);
+        if (!el) {
+          el = document.createElement('input');
+          el.type = 'hidden';
+          el.name = name;
+          form.appendChild(el);
+        }
+        el.value = value;
+      };
 
-      field.value = new Date().toISOString();
+      upsert('submitted_at', new Date().toISOString());
+      upsert('source_url', window.location.href);
     }, true);
   </script>
 
