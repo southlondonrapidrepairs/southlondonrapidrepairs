@@ -6,12 +6,14 @@
   <title>Emergency Carpentry South London | 24/7 Rapid Repairs</title>
   <meta name="description" content="Emergency carpentry across South London. Doors, boarding, frames, security make-safe. Call or WhatsApp 24/7." />
 
-  <link rel="stylesheet" href="main.css?v=7" />
-  <link rel="stylesheet" href="components.css?v=7" />
-  <link rel="stylesheet" href="responsive.css?v=7" />
+  <link rel="stylesheet" href="main.css?v=9" />
+  <link rel="stylesheet" href="components.css?v=9" />
+  <link rel="stylesheet" href="responsive.css?v=9" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="emergency-bar">
     <span>🚨 24/7 Emergency Response</span>
     <a href="tel:+442080583861">020 8058 3861</a>
@@ -21,14 +23,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <span class="brand-badge"><img src="logo.png" alt="South London Rapid Repairs" /></span>
+        <span class="brand-badge"><img src="logo.png" alt="South London Rapid Repairs logo" /></span>
         <span class="brand-text">
           <strong>South London Rapid Repairs</strong>
           <span class="brand-sub">24/7 Emergency Roofing & Carpentry</span>
         </span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="emergency-roofing.html">Roofing</a>
         <a href="emergency-carpentry.html">Carpentry</a>
         <a href="how-it-works.html">How it works</a>
@@ -42,81 +44,163 @@
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container page-hero-inner">
-      <div>
-        <h1>Emergency Carpentry — South London</h1>
-        <p>Broken door, smashed window, frame damage — we match you with a vetted carpenter, fast.</p>
-        <ul class="bullet-check">
-          <li>24/7 emergency response</li>
-          <li>Security make-safe & boarding</li>
-          <li>Clear quote before work</li>
-        </ul>
-      </div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <h1>Emergency Carpentry — South London</h1>
+          <p>Broken door, smashed window, frame damage — we match you with a vetted carpenter, fast.</p>
 
-      <div>
-        <form class="lead-form card" id="carpentry-form">
-          <h3>Get emergency carpentry help</h3>
-          <input name="name" placeholder="Your Name" required />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <input name="postcode" placeholder="Postcode" required />
-          <select name="emergency_type" required>
-            <option value="">Type of Emergency</option>
-            <option>Broken Door</option>
-            <option>Window Boarding</option>
-            <option>Structural Timber</option>
-            <option>Lock/Frame Damage</option>
-          </select>
-          <textarea name="description" placeholder="Describe the carpentry emergency" rows="3" required></textarea>
+          <div class="trust-under-hero">
+            <span class="chip">✅ Quote before work</span>
+            <span class="chip">✅ No payments to us</span>
+            <span class="chip">✅ Security make-safe focus</span>
+          </div>
 
-          <label class="checkbox">
-            <input type="checkbox" required />
-            <span>I agree to be contacted about this enquiry</span>
-          </label>
-
-          <button type="submit" class="submit-button">Get Emergency Carpenter</button>
-        </form>
-
-        <div class="card what-next">
-          <h4>What happens next?</h4>
-          <ul>
-            <li>We confirm the issue and your location</li>
-            <li>Nearest available carpenter is alerted</li>
-            <li>They quote before starting work</li>
+          <ul class="bullet-check">
+            <li>24/7 emergency response</li>
+            <li>Boarding & security make-safe</li>
+            <li>Clear quote before work</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section>
-    <div class="container">
-      <h2 class="section-title">Common carpentry emergencies</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Doors & frames</h3>
-          <p>Forced entry damage, broken hinges, misalignment — secure your property fast.</p>
+          <div class="trust-promise compact">
+            <h3>Carpentry trust promise</h3>
+            <ul>
+              <li>We don’t take deposits or upfront payments.</li>
+              <li>You accept a quote before any work starts.</li>
+              <li>You pay the carpenter directly.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <h3>Boarding & make-safe</h3>
-          <p>Smashed windows or exposed openings — urgent boarding for safety and security.</p>
-        </div>
-        <div class="card">
-          <h3>Structural timber</h3>
-          <p>Immediate assessment and stabilisation if there’s a safety concern.</p>
-        </div>
-      </div>
 
-      <div class="legal-bar">
-        <strong>Important:</strong> South London Rapid Repairs connects customers with independent contractors; we are not the performing contractor. You pay the tradesperson directly.
+        <div>
+          <form class="lead-form card" id="carpentry-form">
+            <h3>Get emergency carpentry help</h3>
+
+            <input type="hidden" name="source_page" value="emergency-carpentry" />
+            <input type="hidden" name="service" value="Emergency Carpentry" />
+
+            <input name="name" placeholder="Your Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input name="postcode" placeholder="Postcode" required />
+
+            <select name="emergency_type" required>
+              <option value="">Type of emergency</option>
+              <option>Broken Door</option>
+              <option>Window Boarding</option>
+              <option>Structural Timber</option>
+              <option>Lock/Frame Damage</option>
+            </select>
+
+            <textarea name="description" placeholder="Describe what’s happened (short is fine)" rows="3" required></textarea>
+
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>I agree to be contacted about this enquiry</span>
+            </label>
+
+            <button type="submit" class="submit-button">Get emergency carpenter</button>
+          </form>
+
+          <div class="card what-next">
+            <h4>What happens next?</h4>
+            <ul>
+              <li>We confirm the issue and your location</li>
+              <li>Nearest available carpenter is alerted</li>
+              <li>You get a quote before work starts</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Emergency guidance (make-safe)</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>If you’ve had a break-in</h3>
+            <ul>
+              <li>If it’s ongoing or unsafe: call 999.</li>
+              <li>Don’t confront anyone.</li>
+              <li>When safe, take photos for insurance/police.</li>
+              <li>We can arrange boarding / make-safe work quickly.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What we’ll ask you</h3>
+            <ul>
+              <li>Your postcode + best contact number</li>
+              <li>What’s damaged (door/window/frame)</li>
+              <li>If there’s an exposed opening (urgent boarding)</li>
+              <li>Photos help us match the right person fast</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Common carpentry emergencies</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Doors & frames</h3>
+            <p>Forced entry damage, broken hinges, misalignment — secure your property fast.</p>
+          </div>
+          <div class="card">
+            <h3>Boarding & make-safe</h3>
+            <p>Smashed windows or exposed openings — urgent boarding for safety and security.</p>
+          </div>
+          <div class="card">
+            <h3>Structural timber</h3>
+            <p>Immediate assessment and stabilisation if there’s a safety concern.</p>
+          </div>
+        </div>
+
+        <div class="areas-card">
+          <h3>Areas we cover</h3>
+          <p class="muted">Croydon, Bromley and surrounding South London. Unsure? WhatsApp your postcode.</p>
+          <div class="areas">
+            <span class="area-chip">Croydon</span>
+            <span class="area-chip">Bromley</span>
+            <span class="area-chip">Sutton</span>
+            <span class="area-chip">Lambeth</span>
+            <span class="area-chip">Southwark</span>
+            <span class="area-chip">Lewisham</span>
+            <span class="area-chip">Greenwich</span>
+            <span class="area-chip">Merton</span>
+            <span class="area-chip">Wandsworth</span>
+          </div>
+        </div>
+
+        <div class="legal-bar">
+          <strong>Important:</strong> South London Rapid Repairs connects customers with independent contractors; we are not the performing contractor. You pay the tradesperson directly.
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>We connect customers with independent contractors; South London Rapid Repairs is not the performing contractor.</p>
-      <p>© 2024 South London Rapid Repairs</p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-strong">South London Rapid Repairs</p>
+        <p class="footer-muted">Emergency Roofing & Carpentry dispatch (not the performing contractor).</p>
+        <p class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <span class="dot">•</span>
+          <a href="terms.html">Terms</a>
+        </p>
+      </div>
+
+      <div class="footer-cta">
+        <a class="btn btn-ghost" href="https://wa.me/message/UQT7P5J26OYKC1">WhatsApp</a>
+        <a class="btn btn-primary" href="tel:+442080583861">Call 020 8058 3861</a>
+      </div>
+
+      <div class="footer-small">
+        <p>© 2024 South London Rapid Repairs</p>
+      </div>
     </div>
   </footer>
 
@@ -125,21 +209,24 @@
     <a class="call" href="tel:+442080583861">Call now</a>
   </div>
 
-  <!-- Timestamp injector -->
   <script>
     document.addEventListener('submit', function (e) {
       const form = e.target;
       if (!(form instanceof HTMLFormElement)) return;
 
-      let field = form.querySelector('input[name="submitted_at"]');
-      if (!field) {
-        field = document.createElement('input');
-        field.type = 'hidden';
-        field.name = 'submitted_at';
-        form.appendChild(field);
-      }
+      const upsert = (name, value) => {
+        let el = form.querySelector(`input[name="${name}"]`);
+        if (!el) {
+          el = document.createElement('input');
+          el.type = 'hidden';
+          el.name = name;
+          form.appendChild(el);
+        }
+        el.value = value;
+      };
 
-      field.value = new Date().toISOString();
+      upsert('submitted_at', new Date().toISOString());
+      upsert('source_url', window.location.href);
     }, true);
   </script>
 
